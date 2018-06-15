@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="fixed-container">
+<view class="container">
+  <view class="my-images">
+     <view class="image-card" wx:for="{{images}}">
+       <image class="content" mode="widthFix" src="{{item.src}}" data-index="{{ index }}" bindtap="preview" bindload="onImageLoaded" style="width:{{ images[index].width || 320 }}rpx; height:{{ images[index].height }}rpx;"></image>  
+      <view class="bottom"> 
+        {{item.originalWidth}} x {{item.originalHeight}} @{{item.date}}
+      </view>
+     </view>
+  </view>
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{!!showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-content">
+      <view class="modal-input">
+        <image mode="widthFix" src="{{newImage}}"></image>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <icon bindtap="onCancel" type="cancel" size="48"/>
+      <icon bindtap="onConfirm" type="download" size="48"/>
+    </view>
+  </view>
+</view>
+<view class="scan-area" bindtap="bindViewTap">
+    <image class="scan-btn" src="scan.png" mode="cover"></image>
+  </view>
+</view>

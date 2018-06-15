@@ -1,0 +1,117 @@
+/**index.wxss**/
+.scan-area {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 132rpx;
+  background-color: #4a6572;
+}
+
+.scan-btn {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  background-color:#FFFFFF;
+  color: #f9aa33;
+  padding: 16rpx;
+  margin: -32rpx;
+  box-shadow: 0 8rpx 32rpx #f9aa33;
+}
+
+.my-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  padding: 24rpx 48rpx;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-start;
+  margin-bottom: 80rpx;
+  color:#FFFFFF;
+  border-radius: 2rpx;
+  box-shadow: 0 4rpx 8rpx #c8c8c8;
+}
+
+.image-card .content {
+  width: 100%;
+}
+
+.image-card .content image {
+  width: flex;
+}
+
+.image-card .bottom {
+  width: 100%;
+  padding: 16rpx;
+  text-align: left;
+  color: #344955;
+  box-sizing: border-box;
+  font-size: 32rpx;
+}
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #232F34;
+  opacity: 1;
+  overflow: hidden;
+  z-index: 9000;
+  color: #426572;
+}
+
+.modal-dialog {
+  width: 590rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 9999;
+  margin: 0 80rpx 0 80rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-input {
+  display: flex;
+ 
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 160rpx;
+  line-height: 160rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
+}

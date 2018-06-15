@@ -1,0 +1,19 @@
+/**app.wxss**/
+.fixed-container {
+  max-height: 100%;
+  display: block;
+} 
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 0;
+  box-sizing: border-box;
+} 
+
+view {
+  box-sizing: border-box;
+}
