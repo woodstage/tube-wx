@@ -3,10 +3,11 @@
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "navigationBarBackgroundColor": "#4a6572",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "TUBE",
+    "backgroundColor": "#4a6572",
+    "backgroundTextStyle": "light"
   }
 }
