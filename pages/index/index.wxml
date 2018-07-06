@@ -1,6 +1,9 @@
 <!--index.wxml-->
 <view class="fixed-container">
 <view class="container">
+  <view wx:if="{{images.length===3}}">
+    guide
+  </view>
   <view class="my-images">
      <view class="image-card" wx:for="{{images}}">
        <image class="content" mode="widthFix" src="{{item.src}}" data-index="{{ index }}" bindtap="preview" bindload="onImageLoaded" style="width:{{ images[index].width || 320 }}rpx; height:{{ images[index].height }}rpx;"></image>  
